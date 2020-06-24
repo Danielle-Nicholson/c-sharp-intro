@@ -16,8 +16,17 @@ namespace c_sharp_intro
             Concatentation means gluing two strings, or text together
             
             .... and end multi-line comments forward slash and asterisk.*/
-    
-            Console.WriteLine("Hello " + myName!);
+
+            Console.WriteLine("Hello " + myName);
+            Console.WriteLine("Please enter your name...");
+                        //Assign variable 'userName' to a value entered by the user.
+
+                        string userName = Console.ReadLine();
+            Console.WriteLine("you have entered: " +userName);
+            // Instead of traditional concatenation using addition operator...
+            //we can use string interpolation (placeholder) to embed valies in
+            //a string
+            Console.WriteLine("hey {0}, you're looking good!", userName);
         }
     }
 }
