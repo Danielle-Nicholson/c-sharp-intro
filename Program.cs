@@ -17,26 +17,46 @@ namespace c_sharp_intro
             bool myBool = true;
 
             // subtraction operator is "-" (minus.)
-            Console.WriteLine( myInt -10); // 32
+            Console.WriteLine(myInt - 10); // 32
 
             // mutiplication operator is "*" (mulitply)
-            Console.WriteLine( myInt * 2 ); // 84
+            Console.WriteLine(myInt * 2); // 84
 
             //Division operator is "/" (division)
-            Console.WriteLine( myInt / 2 ); // 21
+            Console.WriteLine(myInt / 2); // 21
 
             // modulus operator is "%" (percent sign.)
-            Console.WriteLine( myInt % 13); // 3
+            Console.WriteLine(myInt % 13); // 3
 
             // addition operator is "+"
             // ***WAIT this is also the concatention operator.
-            Console.WriteLine( myInt + 8); //50
+            Console.WriteLine(myInt + 8); //50
 
-            Console.WriteLine( "3" + "3");// 33
+            Console.WriteLine("3" + "3");// 33
 
-            Console.WriteLine( "3" + 3 );//
+            Console.WriteLine("3" + 3);//33
+            Console.WriteLine(3 + 6 + "3");// 93
 
-            Console.WriteLine( 3 + 6 + "3" );//
+            // output our variable.
+            Console.WriteLine(myInt); //42
+
+            // new assignment on exisiting varibale
+            myInt = myInt + 2; //44 
+            Console.WriteLine(myInt); //42
+
+            // myInt = myInt + "2"; // cant turn myInt into a string
+            // we told C# that myInt would always be an int
+            // Console.WriteLine(myInt); //42
+
+            myInt++; // the same as typing: myInt + 1;
+            Console.WriteLine(myInt); // 45
+            myInt--;// the same as typing : myInt = myInt -1;
+            Console.WriteLine(myInt); //44
+
+            myInt += 3; // same as typing: myInt = my Int + 3;
+             Console.WriteLine(myInt);// 47
+             myInt -= 5 ; // same as typing: myInt = my Int + 3;
+             Console.WriteLine(myInt);// 47
         }
     }
 }
