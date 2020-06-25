@@ -6,35 +6,37 @@ namespace c_sharp_intro
     {
         static void Main(string[] args)
         {
-            // two slashes are a single line comment 
-            //We are assigning a string value to a variable.
-            string myName = "Dani N";
-            /* We being multi-line comments witha forward slash and asterisk. 
-            
-            Symbols between values or evaluations are considered "operators" 
-            Below we are using the addition sysmbol to concatenate two strings.
-            Concatentation means gluing two strings, or text together
-            
-            .... and end multi-line comments forward slash and asterisk.*/
+            // "=" is the assignment operator
+            // string datatype is used for text.
+            string myString = "this is a string!";
+            // integer datatype is used for whole numbers (no decimals)
+            int myInt = 42;
+            // double datatype is used for decimal point numbers.
+            double myDouble = 33.666;
+            //Boolean is 
+            bool myBool = true;
 
-            Console.WriteLine("Hello " + myName);
-            Console.WriteLine("Please enter your name...");
-                        //Assign variable 'userName' to a value entered by the user.
+            // subtraction operator is "-" (minus.)
+            Console.WriteLine( myInt -10); // 32
 
-                        string userName = Console.ReadLine();
-            Console.WriteLine("you have entered: " +userName);
-            // Instead of traditional concatenation using addition operator...
-            //we can use string interpolation (placeholder) to embed valies in
-            //a string
-            // https://docs.microsoft.com/en-us/dotnet/api/system.console.readline?view=netcore-3.1
-            Console.WriteLine("hey {0}, you're looking good!", userName);
+            // mutiplication operator is "*" (mulitply)
+            Console.WriteLine( myInt * 2 ); // 84
 
-           //lets's play with strings
-           Console.WriteLine("makemeuppercase".ToUpper() );
-           Console.WriteLine("MAKEMELOWERCASE".ToLower() );
-           // substring takes two arguments: 1. starting character positions 2. number of characters to collect.
-           Console.WriteLine("ABCDEFGHIJKLMNOPQRSTUVWXYZ".Substring( 3, 3 ) );
-        Console.WriteLine("XYZ".Length ); //get the number of characters for the string.
+            //Division operator is "/" (division)
+            Console.WriteLine( myInt / 2 ); // 21
+
+            // modulus operator is "%" (percent sign.)
+            Console.WriteLine( myInt % 13); // 3
+
+            // addition operator is "+"
+            // ***WAIT this is also the concatention operator.
+            Console.WriteLine( myInt + 8); //50
+
+            Console.WriteLine( "3" + "3");// 33
+
+            Console.WriteLine( "3" + 3 );//
+
+            Console.WriteLine( 3 + 6 + "3" );//
         }
     }
 }
