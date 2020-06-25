@@ -6,57 +6,51 @@ namespace c_sharp_intro
     {
         static void Main(string[] args)
         {
-            // "=" is the assignment operator
-            // string datatype is used for text.
-            string myString = "this is a string!";
-            // integer datatype is used for whole numbers (no decimals)
-            int myInt = 42;
-            // double datatype is used for decimal point numbers.
-            double myDouble = 33.666;
-            //Boolean is 
-            bool myBool = true;
+            // logical operators
+            // OR will evalute to true is either side is true
+            Console.WriteLine(true || true); // ||is OR 
+            Console.WriteLine(false || true); // True
+            Console.WriteLine(false || false); // False
 
-            // subtraction operator is "-" (minus.)
-            Console.WriteLine(myInt - 10); // 32
+            // AND will only evalute to TRUE if both side are TRUE
+            Console.WriteLine(true && true); //True. // && is OR 
+            Console.WriteLine(false && true); // False
+            Console.WriteLine(false && false); // False
 
-            // mutiplication operator is "*" (mulitply)
-            Console.WriteLine(myInt * 2); // 84
+            // how does this behave with different data-types?
+            // Console.WriteLine( true && 1 ); // it doesn't!
 
-            //Division operator is "/" (division)
-            Console.WriteLine(myInt / 2); // 21
+            // Comparative operators...
+            // " Equal to" check
+            Console.WriteLine(false == false); // true
+            Console.WriteLine(true == false); // false
+            Console.WriteLine(2.25 == 2.25); // True
+            Console.WriteLine(2.25 == 3.14); // False
+            // Console.WriteLine(3.14 == "3.14"); // cannot check two diff. types!!
 
-            // modulus operator is "%" (percent sign.)
-            Console.WriteLine(myInt % 13); // 3
+            // "greater than" check
+            Console.WriteLine(6 > 7); // False
+            Console.WriteLine(10 > 5); // True
 
-            // addition operator is "+"
-            // ***WAIT this is also the concatention operator.
-            Console.WriteLine(myInt + 8); //50
+            // "less than" check
+            Console.WriteLine(6 < 7); // True
+            Console.WriteLine(10 < 5); // False
 
-            Console.WriteLine("3" + "3");// 33
+            //"greater-than or-equal-to" check
+            Console.WriteLine(5 >= 5); // True
+            Console.WriteLine(10 >= 5); // True
+            Console.WriteLine(4 >= 5); // False
 
-            Console.WriteLine("3" + 3);//33
-            Console.WriteLine(3 + 6 + "3");// 93
+            //"less-than or-equal-to" check
+            Console.WriteLine(5 <= 5); // True
+            Console.WriteLine(10 <= 5); // False
+            Console.WriteLine(4 <= 5); // True
 
-            // output our variable.
-            Console.WriteLine(myInt); //42
-
-            // new assignment on exisiting varibale
-            myInt = myInt + 2; //44 
-            Console.WriteLine(myInt); //42
-
-            // myInt = myInt + "2"; // cant turn myInt into a string
-            // we told C# that myInt would always be an int
-            // Console.WriteLine(myInt); //42
-
-            myInt++; // the same as typing: myInt + 1;
-            Console.WriteLine(myInt); // 45
-            myInt--;// the same as typing : myInt = myInt -1;
-            Console.WriteLine(myInt); //44
-
-            myInt += 3; // same as typing: myInt = my Int + 3;
-             Console.WriteLine(myInt);// 44
-             myInt -= 5 ; // same as typing: myInt = my Int + 3;
-             Console.WriteLine(myInt);// 42
+            // "Not equal to" 
+            Console.WriteLine(false != false); // false
+            Console.WriteLine(true != false); // true
+Console.WriteLine(5 != 5); // False
+Console.WriteLine(5 != 10); // true
         }
     }
 }
