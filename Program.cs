@@ -54,9 +54,9 @@ namespace c_sharp_intro
             Console.WriteLine(myInt); //44
 
             myInt += 3; // same as typing: myInt = my Int + 3;
-             Console.WriteLine(myInt);// 47
+             Console.WriteLine(myInt);// 44
              myInt -= 5 ; // same as typing: myInt = my Int + 3;
-             Console.WriteLine(myInt);// 47
+             Console.WriteLine(myInt);// 42
         }
     }
 }
