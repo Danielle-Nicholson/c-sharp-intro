@@ -6,21 +6,19 @@ namespace c_sharp_intro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a string:");
-            string userInput = Console.ReadLine(); // assignment; colling data fromuser
-
-            // we can use "if stamenty to check a condition
-            // if the "if statment" is true , its code block (marked by curly braces {} will execute)
-           
-            if (userInput.Length > 0)
-
+            Console.WriteLine("please tell us if you want to add or subtract: (add/subtract)");
+            string userOperator = Console.ReadLine();
+            // check if user typed add
+            if (userOperator == "add")
             {
-                Console.WriteLine("the user entered a value.");
-            } // if there is an "else" statment proceeding and "if", 
-            //it will only execute ifd the " if statement " was false
-            else
-            {
-                Console.WriteLine("the user did not enter a value.");
+                Console.WriteLine("please enter the frist number:");
+                // @link https://stackoverflow.com/questions/1019793/how-can-i-convert-string-to-int 
+                int firstNum = Int32.Parse(Console.ReadLine()); //convert to integer.
+                Console.WriteLine(" please enter second numnber to add:");
+                int secondNum = Int32.Parse(Console.ReadLine());
+                // Calculate the result
+                int result = firstNum + secondNum;
+                Console.WriteLine("{0} + {1} = {2}", firstNum, secondNum, result);
             }
         }
     }
