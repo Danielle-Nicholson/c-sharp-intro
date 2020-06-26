@@ -7,17 +7,25 @@ namespace c_sharp_intro
         static void Main(string[] args)
         {
             // 2 dimensional array!
-            string[,] topics = { { "cat", "dog", "frog", "hedgehog"},
-                                    { "zebra", "giraffe", "lion", "e;ephant"},
-                                    { "stingray", "octopus", "shark", "whale"}};
-            // we can use foreach to iterate through the list of lists, one list at a time.
-            foreach (string topic in topics)
-
+            string[,] topics = {{"cat","dog","frog","hedgehog"},
+                                {"zebra","giraffe","lion","elephant"},
+                                {"dolphin","octopus","shark","whale"}};
+            // Loop through the rows...
+            for( int row = 0; row < topics.GetLength(0); row++ )
             {
-                // output the current animal!
-                Console.WriteLine("this animal is: {0}", topic);
+                // Output current row...
+                Console.WriteLine( "Starting row #{0}", row );
+                // Loop through columns in the current row...
+                for ( int column = 0; column < topics.GetLength(1); column++ )
+                {
+                    // Output the current column...
+                    Console.WriteLine( "Starting column #{0}", column );
+                    // Output the current animal!
+                    Console.WriteLine( "This animal is: {0}", topics[row,column] );
+                }
             }
+
         }
     }
-
 }
+
